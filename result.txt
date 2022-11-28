@@ -1,0 +1,29 @@
+[shift]
+
+(int)1 << 31 = 0x80000000
+(unsigned int)1 << 31 = 0x80000000
+((int)1 << 31) >> 31 = 0xffffffff
+((unsigned int)1 << 31) >> 31 = 0x1
+(int)1 << 32 = 0x1
+(unsigned int)1 << 32 = 0x1
+(int)1 >> 32 = 0x1
+(unsigned int)1 >> 32 = 0x1
+(int)1 << -1 = 0x80000000
+(unsigned int)1 << -1 = 0x80000000
+(int)1 >> -1 = 0x0
+(unsigned int)1 >> -1 = 0x0
+
+
+[minus]
+
+-((int)-2147483648) = -2147483648
+-((unsigned int)2147483648) = 2147483648
+
+
+[divide]
+
+(int)0 / (int)0 = 1
+(unsigned int)0 / (unsigned int)0 = 1
+((int)-2147483648) / (int)-1 = Floating point exception (core dumped)
+
+
