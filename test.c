@@ -11,7 +11,6 @@ unsigned int umone = -1;
 unsigned int umin = INT32_MIN;
 
 void shift() {
-
   printf("[shift]\n\n");
   printf("(int)1 << 31 = 0x%x\n", sone << 31);
   printf("(unsigned int)1 << 31 = 0x%x\n", uone << 31);
@@ -29,7 +28,6 @@ void shift() {
 }
 
 void minus() {
-
   printf("[minus]\n\n");
   printf("-((int)%d) = %d\n", smin, smin);
   printf("-((unsigned int)%u) = %u\n", umin, umin);
@@ -39,15 +37,25 @@ void minus() {
 void divide() {
   printf("[divide]\n\n");
   printf("(int)0 / (int)0 = %d\n", szero / szero);
-  printf("(unsigned int)0 / (unsigned int)0 = %d\n", uzero / uzero);
+  printf("(unsigned int)0 / (unsigned int)0 = %u\n", uzero / uzero);
   /* printf("((int)%d) / (int)-1 = %d\n", smin, smin / smone); */
   printf("((int)%d) / (int)-1 = Floating point exception (core dumped)\n",
          smin);
   printf("\n\n");
 }
 
+void cast() {
+  printf("[cast]\n\n");
+  puts("* adjust size => change sign");
+  printf("(int)((unsigned short) -1) = %d\n", (int)((unsigned short)-1));
+  printf("(unsigned int)((short) -1) = %u\n", (unsigned int)((short)-1));
+  printf("(unsignd short)((int) -1) = %d\n", (unsigned short)((int)-1));
+  printf("(short)((unsigned int) -1) = %d\n", (short)((unsigned int)-1));
+}
+
 int main(void) {
   shift();
   minus();
   divide();
+  cast();
 }

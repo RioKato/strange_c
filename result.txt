@@ -27,3 +27,10 @@
 ((int)-2147483648) / (int)-1 = Floating point exception (core dumped)
 
 
+[cast]
+
+* adjust size => change sign
+(int)((unsigned short) -1) = 65535
+(unsigned int)((short) -1) = 4294967295
+(unsignd short)((int) -1) = 65535
+(short)((unsigned int) -1) = -1
