@@ -12,6 +12,10 @@
 (unsigned int)1 << -1 = 0x80000000
 (int)1 >> -1 = 0x0
 (unsigned int)1 >> -1 = 0x0
+(int)80000000 << 1 = 0x0
+(unsignd int)80000000 << 1 = 0x0
+(int)80000000 >> 1 = 0xc0000000
+(unsignd int)80000000 >> 1 = 0x40000000
 
 
 [minus]

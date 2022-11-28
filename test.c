@@ -24,6 +24,11 @@ void shift() {
   printf("(unsigned int)1 << -1 = 0x%x\n", uone << -1);
   printf("(int)1 >> -1 = 0x%x\n", sone >> -1);
   printf("(unsigned int)1 >> -1 = 0x%x\n", uone >> -1);
+  printf("(int)%x << 1 = 0x%x\n", smin, smin << 1);
+  printf("(unsignd int)%x << 1 = 0x%x\n", umin, umin << 1);
+  printf("(int)%x >> 1 = 0x%x\n", smin, smin >> 1);
+  printf("(unsignd int)%x >> 1 = 0x%x\n", umin, umin >> 1);
+
   printf("\n\n");
 }
 
