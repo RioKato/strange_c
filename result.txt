@@ -34,6 +34,7 @@
 [modulo]
 
 (int)-3 % (int)2 = -1
+(int)3 % (int)-2 = 1
 (int)-3 % (int)-2 = -1
 (int)-3 % (int)0 = Floating point exception (core dumped)
 

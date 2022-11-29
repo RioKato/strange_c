@@ -51,6 +51,7 @@ void divide() {
 void modulo() {
   printf("[modulo]\n\n");
   printf("(int)-3 \% (int)2 = %d\n", (int)-3 % (int)2);
+  printf("(int)3 \% (int)-2 = %d\n", (int)3 % (int)-2);
   printf("(int)-3 \% (int)-2 = %d\n", (int)-3 % (int)-2);
   /* printf("(int)-3 \% (int)0 = %d\n", (int)-3 % (int)0); */
   printf("(int)-3 \% (int)0 = Floating point exception (core dumped)\n");
