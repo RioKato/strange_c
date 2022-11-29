@@ -34,7 +34,7 @@ void shift() {
 void minus() {
   printf("[minus]\n\n");
   printf("-((int)%d) = %d\n", smin, smin);
-  printf("-((unsigned int)%u) = %u\n", umin, umin);
+  printf("-((unsigned int)%d) = %u\n", umin, umin);
   printf("\n\n");
 }
 
