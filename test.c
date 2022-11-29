@@ -28,7 +28,6 @@ void shift() {
   printf("(unsignd int)%x << 1 = 0x%x\n", umin, umin << 1);
   printf("(int)%x >> 1 = 0x%x\n", smin, smin >> 1);
   printf("(unsignd int)%x >> 1 = 0x%x\n", umin, umin >> 1);
-
   printf("\n\n");
 }
 
@@ -49,6 +48,15 @@ void divide() {
   printf("\n\n");
 }
 
+void modulo() {
+  printf("[modulo]\n\n");
+  printf("(int)-3 \% (int)2 = %d\n", (int)-3 % (int)2);
+  printf("(int)-3 \% (int)-2 = %d\n", (int)-3 % (int)-2);
+  /* printf("(int)-3 \% (int)0 = %d\n", (int)-3 % (int)0); */
+  printf("(int)-3 \% (int)0 = Floating point exception (core dumped)\n");
+  printf("\n\n");
+}
+
 void cast() {
   printf("[cast]\n\n");
   puts("* adjust size => change sign");
@@ -62,5 +70,6 @@ int main(void) {
   shift();
   minus();
   divide();
+  modulo();
   cast();
 }

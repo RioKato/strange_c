@@ -31,6 +31,13 @@
 ((int)-2147483648) / (int)-1 = Floating point exception (core dumped)
 
 
+[modulo]
+
+(int)-3 % (int)2 = -1
+(int)-3 % (int)-2 = -1
+(int)-3 % (int)0 = Floating point exception (core dumped)
+
+
 [cast]
 
 * adjust size => change sign
