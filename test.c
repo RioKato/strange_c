@@ -65,6 +65,14 @@ void cast() {
   printf("(unsigned int)((short) -1) = %u\n", (unsigned int)((short)-1));
   printf("(unsignd short)((int) -1) = %d\n", (unsigned short)((int)-1));
   printf("(short)((unsigned int) -1) = %d\n", (short)((unsigned int)-1));
+  printf("\n\n");
+}
+
+void size() {
+  printf("[size]\n\n");
+  printf("sizeof(size_t) = %d\n", sizeof(size_t));
+  printf("sizeof(ssize_t) = %d\n", sizeof(ssize_t));
+  printf("\n\n");
 }
 
 int main(void) {
@@ -73,4 +81,5 @@ int main(void) {
   divide();
   modulo();
   cast();
+  size();
 }

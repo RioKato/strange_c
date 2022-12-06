@@ -46,3 +46,11 @@
 (unsigned int)((short) -1) = 4294967295
 (unsignd short)((int) -1) = 65535
 (short)((unsigned int) -1) = -1
+
+
+[size]
+
+sizeof(size_t) = 8
+sizeof(ssize_t) = 8
+
+
