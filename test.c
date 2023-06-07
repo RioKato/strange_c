@@ -1,5 +1,6 @@
 #include <stdint.h>
 #include <stdio.h>
+#include <stdlib.h>
 
 int szero = 0;
 int sone = 1;
@@ -75,6 +76,23 @@ void size() {
   printf("\n\n");
 }
 
+void t_malloc() {
+  printf("[malloc]\n\n");
+  printf("malloc(0) = %p\n", malloc(0));
+  printf("malloc(-1) = %p\n", malloc(-1));
+  printf("malloc(0xffffffff) = %p\n", malloc(0xffffffff));
+  printf("\n\n");
+}
+
+void t_alloca() {
+  printf("[alloca]\n\n");
+  printf("alloca(0) = %p\n", alloca(0));
+  printf("alloca(-0x10) = %p\n", alloca(-0x10));
+  printf("alloca(-0x100) = %p\n", alloca(-0x100));
+  printf("\n\n");
+  exit(0);
+}
+
 int main(void) {
   shift();
   minus();
@@ -82,4 +100,6 @@ int main(void) {
   modulo();
   cast();
   size();
+  t_malloc();
+  t_alloca();
 }
