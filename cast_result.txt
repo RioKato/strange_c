@@ -1,5 +1,6 @@
 signed => unsigned: signed extension
 unsigned => signed: zero extension
+
 Result:
 char => unsigned short: ff80
 char => unsigned int: ffffff80
@@ -25,3 +26,10 @@ unsigned int => long: 80000000
 unsigned long => char: 0
 unsigned long => short: 0
 unsigned long => int: 0
+
+unsigned long + int = unsigned long + unsigned long
+void* + int = void* + void*
+int + unsigned long = unsigned long + unsigned long
+int + void* = void* + void*
+long + unsigned int = long + long
+long + int = long + long
