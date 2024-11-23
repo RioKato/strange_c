@@ -1,0 +1,27 @@
+signed => unsigned: signed extension
+unsigned => signed: zero extension
+Result:
+char => unsigned short: ff80
+char => unsigned int: ffffff80
+char => unsigned long: ffffffffffffff80
+short => unsigned char: 0
+short => unsigned int: ffff8000
+short => unsigned long: ffffffffffff8000
+int => unsigned char: 0
+int => unsigned short: 0
+int => unsigned long: ffffffff80000000
+long => unsigned char: 0
+long => unsigned short: 0
+long => unsigned int: 0
+unsigned char => short: 80
+unsigned char => int: 80
+unsigned char => long: 80
+unsigned short => char: 0
+unsigned short => int: 8000
+unsigned short => long: 8000
+unsigned int => char: 0
+unsigned int => short: 0
+unsigned int => long: 80000000
+unsigned long => char: 0
+unsigned long => short: 0
+unsigned long => int: 0
