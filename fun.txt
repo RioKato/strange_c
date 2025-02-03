@@ -1,0 +1,4 @@
+sample = This is a sample
+strlen(sample) = 16
+snprintf(buf, 4, "%s", sample) = 16
+buf = Thi
